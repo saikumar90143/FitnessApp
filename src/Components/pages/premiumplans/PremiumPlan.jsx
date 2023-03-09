@@ -23,7 +23,7 @@ const textref=useRef(null)
     gsap.fromTo(text,{y:100,duration:2,opacity:0,ease:"back"},{y:0,opacity:1,duration:2,scrollTrigger:{
       trigger:text,
        scrub:1,
-      
+
       
       toggleActions:"restart none none reverse"
     }})
