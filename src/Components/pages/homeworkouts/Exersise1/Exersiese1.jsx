@@ -1,41 +1,56 @@
-import { MDBCol, MDBContainer, MDBRow } from 'mdb-react-ui-kit'
-import React from 'react'
-import styled from 'styled-components'
-import ExersiseInfo from './ExersiseInfo'
-import MoreWorkouts from './MoreWorkouts'
-
+import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
+import React from "react";
+import styled from "styled-components";
+import ExersiseInfo from "./ExersiseInfo";
+import MoreWorkouts from "./MoreWorkouts";
 
 const Exersiese1 = () => {
-    const Exersises=["Stretching","Jumping Jack 30x3","Crunch 30x3","Burpees 30x3","Knee Squat 20x3","Clap Push Up 10x3"]
+  const Exersises = [
+    "Stretching",
+    "Jumping Jack 30x3",
+    "Crunch 30x3",
+    "Burpees 30x3",
+    "Knee Squat 20x3",
+    "Clap Push Up 10x3",
+  ];
   return (
     <Wrapper>
-       <MDBContainer fluid>
-          <MDBRow className='my-5'>
-            <MDBCol size='12' md='4 text-start' >
-           <h3 className='ms-4'>Exercises</h3>
-           <div className=' '>
-            {Exersises.map((elem,index)=>{
-                return(
-                    <h6 key={index} className=' ms-5 mb-4' > {elem}</h6>
-                )
-            })}
-                    </div>
-            </MDBCol>
-            {/* video */}
-            <MDBCol size='12' md='8'>
-              <div style={{maxWidth:"800px",maxHeight:"400px"}}>
-              <iframe maxWidth="100%" height="400" src="https://www.youtube.com/embed/DOtr16U8V2M" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>               </div>
-            </MDBCol>
-          </MDBRow>
-          <ExersiseInfo/>
-          <MoreWorkouts/>
-       </MDBContainer>
+      <MDBContainer fluid>
+        <MDBRow className="my-5">
+          <MDBCol size="12" md="4 text-start">
+            <h3 className="ms-4">Exercises</h3>
+            <div className=" ">
+              {Exersises.map((elem, index) => {
+                return (
+                  <h6 key={index} className=" ms-5 mb-4">
+                    {" "}
+                    {elem}
+                  </h6>
+                );
+              })}
+            </div>
+          </MDBCol>
+          {/* video */}
+          <MDBCol size="12" md="8">
+            <div style={{ maxWidth: "800px", maxHeight: "400px" }}>
+              <iframe
+                maxWidth="100%"
+                height="400"
+                src="https://www.youtube.com/embed/DOtr16U8V2M"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>{" "}
+            </div>
+          </MDBCol>
+        </MDBRow>
+        <ExersiseInfo />
+        <MoreWorkouts />
+      </MDBContainer>
     </Wrapper>
-  )
-}
+  );
+};
 
-const Wrapper=styled.section`
-
-
-`
-export default Exersiese1
+const Wrapper = styled.section``;
+export default Exersiese1;

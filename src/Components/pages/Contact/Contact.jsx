@@ -1,6 +1,6 @@
 import {
-    MDBBtn,
-    MDBCheckbox,
+  MDBBtn,
+  MDBCheckbox,
   MDBCol,
   MDBContainer,
   MDBInput,
@@ -68,8 +68,15 @@ const Contact = () => {
                   />
                 </MDBCol>
               </MDBRow>
-              <MDBTextArea style={{resize:"none"}} cols={4} rows={7} label='describe your goals'/>
-              <MDBBtn className="my-4" type="submit">Submit</MDBBtn>
+              <MDBTextArea
+                style={{ resize: "none" }}
+                cols={4}
+                rows={7}
+                label="describe your goals"
+              />
+              <MDBBtn className="my-4" type="submit">
+                Submit
+              </MDBBtn>
             </form>
           </MDBCol>
         </MDBRow>

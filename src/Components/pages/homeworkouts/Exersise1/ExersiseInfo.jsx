@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const ExersiseInfo = () => {
   return (
-    <Wrapper className="container text-start" style={{width:"75%"}}>
+    <Wrapper className="container text-start" style={{ width: "75%" }}>
       <article>
         <div>
           <h1>
@@ -39,7 +39,7 @@ const ExersiseInfo = () => {
         </MDBTypography>
       </article>
       {/* frame */}
-      <div style={{backgroundColor:"whitesmoke"}} className='note p-4 my-4'>
+      <div style={{ backgroundColor: "whitesmoke" }} className="note p-4 my-4">
         <p className="fst-italic">
           Pulldown training legs body composition stretch, body fat percentage
           kettlebell kick burpees running barbell jacks.
@@ -64,11 +64,11 @@ const ExersiseInfo = () => {
 };
 
 const Wrapper = styled.section`
-h1{
-  font-size: min(4rem,5vw);
-}
-.note{
-  border-left: 5px solid gray;
-}
+  h1 {
+    font-size: min(4rem, 5vw);
+  }
+  .note {
+    border-left: 5px solid gray;
+  }
 `;
 export default ExersiseInfo;
