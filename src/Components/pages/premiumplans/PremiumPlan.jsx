@@ -100,6 +100,7 @@ background-image: url("${overlay}");
 background-repeat: no-repeat;
 background-position: top right;
 background-size: 500px;
+max-width: 100%;
     .card{
   height:480px;
   transition: all 0.5s ease;
@@ -117,6 +118,7 @@ background-size: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
+    overflow-x: hidden;
     
 }
 

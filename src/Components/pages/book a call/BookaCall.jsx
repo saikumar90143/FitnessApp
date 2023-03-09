@@ -18,7 +18,7 @@ const BookaCall = () => {
         {/* image */}
         <MDBCol size='12' md='6'>
         <section>
-            <MDBCardImage src={image} alt='book'/>
+            <MDBCardImage src={image} alt='book' fluid/>
         </section>
         </MDBCol>
        </MDBRow>

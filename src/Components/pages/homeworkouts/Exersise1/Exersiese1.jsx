@@ -24,7 +24,7 @@ const Exersiese1 = () => {
             {/* video */}
             <MDBCol size='12' md='8'>
               <div style={{maxWidth:"800px",maxHeight:"400px"}}>
-              <iframe width="100%" height="400" src="https://www.youtube.com/embed/DOtr16U8V2M" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>               </div>
+              <iframe maxWidth="100%" height="400" src="https://www.youtube.com/embed/DOtr16U8V2M" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>               </div>
             </MDBCol>
           </MDBRow>
           <ExersiseInfo/>
